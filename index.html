@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damar Trading - Telur Berkualitas Premium</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image.png">
+  <link rel="apple-touch-icon" href="image.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="image.png" alt="Damar Trading Logo" class="logo-img">
+        <span class="logo-text">Damar Trading</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Telur Berkualitas Premium</h1>
+        <h2>Segar • Bergizi • Terpercaya</h2>
+        <p>Kami menyediakan telur ayam pilihan langsung dari peternakan terbaik ke meja makan keluarga Indonesia. Kualitas premium dengan harga terjangkau.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="showContact()">
+            <i class="fas fa-phone"></i>
+            Hubungi Kami
+          </button>
+          <button class="btn btn-secondary" onclick="scrollToSection('produk')">
+            <i class="fas fa-arrow-right"></i>
+            Jelajahi Produk
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="image.png" alt="Telur Berkualitas">
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <i class="fas fa-users"></i>
+        <div>
+          <h3>100+</h3>
+          <p>Pelanggan Puas</p>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-truck"></i>
+        <div>
+          <h3>24 Jam</h3>
+          <p>Pengiriman Cepat</p>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-award"></i>
+        <div>
+          <h3>5 Tahun</h3>
+          <p>Pengalaman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="produk" class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produk Unggulan Kami</h2>
+        <p>Pilihan telur berkualitas untuk berbagai kebutuhan</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Picture5.jpg" alt="Telur Super">
+            <div class="product-badge">Terlaris</div>
+          </div>
+          <div class="product-content">
+            <h3>Telur Super</h3>
+            <p>Ukuran terbesar dengan kuning telur yang kental dan protein tinggi, ideal untuk konsumsi keluarga dan kebutuhan komersial.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Ukuran 70-75 gram</span>
+              <span><i class="fas fa-check"></i> Protein tinggi</span>
+              <span><i class="fas fa-check"></i> Kuning telur kental</span>
+              <span><i class="fas fa-check"></i> Cocok untuk restoran</span>
+            </div>
+            <div class="product-price">
+              <span class="price">Hubungi Untuk Harga</span>
+            </div>
+            <button class="btn btn-order" onclick="openWhatsApp('Telur Super')">
+              <i class="fab fa-whatsapp"></i>
+              Info Lebih Lanjut
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Picture5.jpg" alt="Telur Remban">
+            <div class="product-badge">Premium</div>
+          </div>
+          <div class="product-content">
+            <h3>Telur Remban</h3>
+            <p>Ukuran besar dengan kualitas premium, cocok untuk kebutuhan keluarga dan bisnis kuliner.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Ukuran 65-70 gram</span>
+              <span><i class="fas fa-check"></i> Kualitas premium</span>
+              <span><i class="fas fa-check"></i> Kuning telur besar</span>
+              <span><i class="fas fa-check"></i> Ideal untuk keluarga</span>
+            </div>
+            <div class="product-price">
+              <span class="price">Hubungi Untuk Harga</span>
+            </div>
+            <button class="btn btn-order" onclick="openWhatsApp('Telur Remban')">
+              <i class="fab fa-whatsapp"></i>
+              Info Lebih Lanjut
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Picture5.jpg" alt="Telur Bujang">
+            <div class="product-badge">Ekonomis</div>
+          </div>
+          <div class="product-content">
+            <h3>Telur Bujang</h3>
+            <p>Ukuran sedang dengan harga terjangkau namun tetap berkualitas tinggi untuk kebutuhan sehari-hari.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Ukuran 55-60 gram</span>
+              <span><i class="fas fa-check"></i> Harga terjangkau</span>
+              <span><i class="fas fa-check"></i> Kualitas terjamin</span>
+              <span><i class="fas fa-check"></i> Cocok sehari-hari</span>
+            </div>
+            <div class="product-price">
+              <span class="price">Hubungi Untuk Harga</span>
+            </div>
+            <button class="btn btn-order" onclick="openWhatsApp('Telur Bujang')">
+              <i class="fab fa-whatsapp"></i>
+              Info Lebih Lanjut
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="Picture5.jpg" alt="Telur Pelor">
+            <div class="product-badge">Hemat</div>
+          </div>
+          <div class="product-content">
+            <h3>Telur Pelor</h3>
+            <p>Ukuran kecil dengan harga ekonomis, perfect untuk kebutuhan rumah tangga dengan budget terbatas.</p>
+            <div class="product-features">
+              <span><i class="fas fa-check"></i> Ukuran 45-50 gram</span>
+              <span><i class="fas fa-check"></i> Harga ekonomis</span>
+              <span><i class="fas fa-check"></i> Kualitas baik</span>
+              <span><i class="fas fa-check"></i> Budget friendly</span>
+            </div>
+            <div class="product-price">
+              <span class="price">Hubungi Untuk Harga</span>
+            </div>
+            <button class="btn btn-order" onclick="openWhatsApp('Telur Pelor')">
+              <i class="fab fa-whatsapp"></i>
+              Info Lebih Lanjut
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mengapa Memilih Damar Trading?</h2>
+        <p>Keunggulan kami yang membuat telur Anda selalu berkualitas dan segar</p>
+      </div>
+      <div class="why-us-grid">
+        <div class="why-us-item">
+          <i class="fas fa-seedling"></i>
+          <h3>Sumber Terpercaya</h3>
+          <p>Telur kami berasal dari peternakan lokal terkemuka yang menerapkan standar kualitas tinggi.</p>
+        </div>
+        <div class="why-us-item">
+          <i class="fas fa-truck-fast"></i>
+          <h3>Pengiriman Cepat & Aman</h3>
+          <p>Kami memastikan telur sampai ke tangan Anda dalam kondisi segar dan utuh dengan pengiriman terbaik.</p>
+        </div>
+        <div class="why-us-item">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>Layanan Pelanggan Prima</h3>
+          <p>Tim kami siap membantu Anda dengan ramah dan responsif untuk setiap kebutuhan Anda.</p>
+        </div>
+        <div class="why-us-item">
+          <i class="fas fa-certificate"></i>
+          <h3>Standar Kualitas Tertinggi</h3>
+          <p>Setiap telur melewati seleksi ketat untuk memastikan hanya yang terbaik yang sampai kepada Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="tentang" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Tentang Damar Trading</h2>
+          <p>Damar Trading adalah supplier telur ayam berkualitas yang telah melayani ribuan pelanggan di seluruh Indonesia sejak 2020. Kami berkomitmen untuk menyediakan telur segar dengan kualitas terbaik langsung dari peternakan terpercaya.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-leaf"></i>
+              <div>
+                <h4>100% Alami</h4>
+                <p>Telur segar tanpa bahan pengawet</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-shipping-fast"></i>
+              <div>
+                <h4>Pengiriman Cepat</h4>
+                <p>Dijamin sampai dalam kondisi segar</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <h4>Kualitas Terjamin</h4>
+                <p>Standar kualitas tertinggi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="image.png" alt="Peternakan Ayam">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimoni" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Apa Kata Pelanggan Kami?</h2>
+        <p>Mereka telah merasakan kualitas dan kesegaran telur Damar Trading</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Telur Damar Trading selalu segar dan berkualitas premium. Sangat cocok untuk kebutuhan keluarga saya sehari-hari. Pengirimannya juga cepat!</p>
+          <div class="customer-info">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer Avatar" class="customer-avatar">
+            <div class="customer-details">
+              <span class="customer-name">Ibu Ani</span>
+              <span class="customer-location">Jakarta</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Pesan telur di Damar Trading tidak pernah mengecewakan. Kualitasnya konsisten, dan pelayanan pelanggannya sangat responsif. Rekomendasi!</p>
+          <div class="customer-info">
+            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer Avatar" class="customer-avatar">
+            <div class="customer-details">
+              <span class="customer-name">Bapak Budi</span>
+              <span class="customer-location">Bogor</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">Saya sangat puas dengan telur organik dari Damar Trading. Rasanya enak dan saya yakin dengan kualitas alaminya. Pasti akan repeat order!</p>
+          <div class="customer-info">
+            <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Customer Avatar" class="customer-avatar">
+            <div class="customer-details">
+              <span class="customer-name">Kak Sita</span>
+              <span class="customer-location">Depok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <h2>Siap Mendapatkan Telur Terbaik?</h2>
+      <p>Hubungi Damar Trading sekarang untuk informasi lebih lanjut tentang produk premium kami dan penawaran spesial!</p>
+      <button class="btn btn-primary" onclick="showContact()">
+        <i class="fas fa-phone-alt"></i>
+        Hubungi Kami Sekarang
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontak" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hubungi Kami</h2>
+        <p>Konsultasi dan pemesanan produk</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Telepon</h4>
+              <p>0813-7145-3492</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/6281371453492" target="_blank">0813-7145-3492</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>damartrading@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Alamat</h4>
+              <p>Jalan Batu Nan Limo Lubuk Batingkok, Koto Tangah Simalanggang, Kec. Payakumbuh, Kabupaten Lima Puluh Kota, Sumatera Barat 26251</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Pesan" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="image.png" alt="Damar Trading Logo" class="logo-img-footer">
+            <span>Damar Trading</span>
+          </div>
+          <p>Penyedia telur berkualitas premium untuk keluarga Indonesia.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="#produk">Telur Super</a></li>
+            <li><a href="#produk">Telur Remban</a></li>
+            <li><a href="#produk">Telur Bujang</a></li>
+            <li><a href="#produk">Telur Pelor</a></li>
+            <li><a href="#produk">Telur Organik</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#kontak">Pemesanan</a></li>
+            <li><a href="#kontak">Pengiriman</a></li>
+            <li><a href="#kontak">Konsultasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> 0813-7145-3492</li>
+            <li><i class="fas fa-envelope"></i> damartrading@example.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Payakumbuh, Sumatera Barat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Damar Trading. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Pesan Produk</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="product">Pilih Produk:</label>
+          <select id="product" required>
+            <option value="">Pilih produk...</option>
+            <option value="telur-super">Telur Super</option>
+            <option value="telur-remban">Telur Remban</option>
+            <option value="telur-bujang">Telur Bujang</option>
+            <option value="telur-pelor">Telur Pelor</option>
+            <option value="telur-organik">Telur Organik</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Jumlah:</label>
+          <input type="number" id="quantity" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="customerName">Nama:</label>
+          <input type="text" id="customerName" required>
+        </div>
+        <div class="form-group">
+          <label for="customerPhone">Telepon:</label>
+          <input type="tel" id="customerPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="customerAddress">Alamat:</label>
+          <textarea id="customerAddress" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>
