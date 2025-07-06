@@ -106,13 +106,6 @@ damar-trading/
 2. Buka `index.html` di browser
 3. Website siap digunakan!
 
-## 📞 Contact Information
-
-- **Phone**: 0813-7145-3492
-- **WhatsApp**: 0813-7145-3492
-- **Email**: damartrading@gmail.com
-- **Address**: Jalan Batu Nan Limo Lubuk Batingkok, Koto Tangah Simalanggang, Kec. Payakumbuh, Kabupaten Lima Puluh Kota, Sumatera Barat 26251
-
 ## 🔄 Updates
 
 ### Version 2.0 - Modern Redesign
