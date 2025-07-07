@@ -791,7 +791,12 @@ body {
 }
 
 .about-image img {
-  width: 100%;
+  width: 350px;
+  height: 350px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-medium);
   transition: var(--transition);

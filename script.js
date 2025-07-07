@@ -15,6 +15,7 @@ class DamarTrading {
     this.setupAnimations();
     this.setupNotificationSystem();
     this.setupIntersectionObserver();
+    this.setupAboutImageSlider();
   }
 
   // Navigation Setup
@@ -430,6 +431,25 @@ if (closeBtn) {
         document.body.style.overflow = 'auto';
       }, 300);
     }
+  }
+
+  // About Section Image Slider
+  setupAboutImageSlider() {
+    const imageElement = document.getElementById('aboutSliderImage');
+    if (!imageElement) return;
+    const images = [
+      'Picture1.jpg',
+      'Picture2.jpg',
+      'Picture3.jpg',
+      'Picture4.jpg',
+      'Picture5.jpg',
+      'Picture6.jpg'
+    ];
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      imageElement.src = images[current];
+    }, 2500);
   }
 }
 
